@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{product.name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>        
+    <ion-card>
+        <ion-item>
+            <ion-icon name="pin" slot="start"></ion-icon>
+            <ion-label>{{ product.description }}</ion-label>
+            <ion-label>{{ product.price }}</ion-label>
+            
+        </ion-item>
+        <button ion-button  (click)="goToRoot()" > Go To Root </button>
+        <button ion-button  (click)="goBack()" > Go back </button>
+    </ion-card>
+</ion-content>
